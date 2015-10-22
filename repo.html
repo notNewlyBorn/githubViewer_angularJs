@@ -1,0 +1,25 @@
+<html>
+
+  <head>
+    <link data-require="bootstrap-css@3.3.1" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <h2>{{repo.name}}</h2>
+    <a href="#/main">Back to search</a>
+    <a href="#/user/{{repo.owner.login}}">Back to {{repo.owner.login}}</a>
+    <div>
+    Issues: {{repo.open_issues_count}}
+    </div>
+    <div>
+      <ul>
+        <li ng-repeat="user in repo.collaborators">
+          <img src="http://www.gravatar.com/avatar/{{user.gravatar_id}}" alt="{{user.login}}" />
+
+            {{ user.login }}
+        </li>
+      </ul>
+    </div>
+  </body>
+
+</html>

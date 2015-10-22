@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>
+      document.write('<base href="' + document.location + '" />');
+    </script>
+    <link data-require="bootstrap-css@3.3.1" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.3/angular.js" data-semver="1.4.3"></script>
+    <script data-require="angular-route@*" data-semver="1.4.3" src="https://code.angularjs.org/1.4.3/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="MainController.js"></script>
+    <script src="UserController.js"></script>
+    <script src="github.js"></script>
+    <script src="RepoController.js"></script>
+    <script src="FollowerController.js"></script>
+  
+  
+  </head>
+  
+  <body>
+    <h2>Github Viewer</h2>
+    <div ng-view></div>
+  </body>
+
+</html>
